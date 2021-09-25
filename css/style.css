@@ -1,0 +1,86 @@
+.page {
+  height: 100%;
+}
+
+.page__body {
+  width: 1200px;
+  min-height: 100%;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Котики */
+
+.comparison {
+  position: relative;
+}
+
+.comparison__wrapper {
+    position: relative;
+    height: 520px;
+
+    margin: 20px;
+}
+
+.comparison__inner {
+    position: absolute;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.comparison__image {
+    display: block;
+    height: 520px;;
+}
+
+/* Слайдер */
+
+.comparison__slider {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 10px 20px;
+}
+
+/* .comparison__scale {
+} */
+
+.comparison__slider-bar {
+  width: 50vw;
+}
+
