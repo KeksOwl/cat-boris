@@ -45,25 +45,37 @@ img {
 }
 
 .comparison__wrapper {
-    position: relative;
     height: 520px;
 
     margin: 20px;
+
+    display: flex;
+    flex-flow: row nowrap;
 }
 
 .comparison__inner {
-    position: absolute;
-    width: auto;
-    height: auto;
-    overflow: hidden;
+    position: relative;
 
-    left: 50%;
-    transform: translateX(-50%);
+    width: 50%;
+    height: 520px;
+
+    overflow: hidden;
 }
 
 .comparison__image {
-    display: block;
-    height: 520px;;
+    position: absolute;
+
+    height: 100%;
+}
+
+.comparison__image--before {
+  min-width: 677px;
+  left: 214px;
+}
+
+.comparison__image--after {
+  min-width: 545px;
+  right: 309px;
 }
 
 /* Слайдер */
@@ -76,9 +88,6 @@ img {
 
   margin: 10px 20px;
 }
-
-/* .comparison__scale {
-} */
 
 .comparison__slider-bar {
   width: 50vw;
